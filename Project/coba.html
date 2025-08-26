@@ -1,84 +1,53 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trending Games</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      body {
-        background-color: #0b0c2a; /* warna biru gelap seperti gambar */
-        color: white;
-      }
-      .games-section {
-        padding: 30px;
-        border-radius: 15px;
-      }
-      .games-section h2 {
-        margin-bottom: 20px;
-      }
-      .game-card {
-        width: 160px; /* biar enak kalau mau scroll ke samping */
-        background: transparent;
-        border: none;
-        text-align: center;
-        color: white;
-        flex: 0 0 auto;
+<div class="card text-white rounded-4 overflow-hidden" style="background-color:#1b1b3a;">
+  <div class="row g-0">
+    <!-- Bagian Kiri (Teks) -->
+    <div class="col-md-8 p-4">
+      <span class="badge bg-warning text-dark mb-2">⭐ game of the day</span>
+      <h2 class="fw-bold">Astro Bot</h2>
 
-      }
-      .game-card img {
-        border-radius: 10px;
-        margin-bottom: 8px;
-        width: 100%;
-        height: 220px;
-        object-fit:cover;
-      }
-      .scrolling-wrapper {
-        display: flex;
-        overflow-x: auto;
-        gap: 15px;
-        padding-bottom: 10px;
-      }
-      .scrolling-wrapper::-webkit-scrollbar {
-        height: 8px;
-      }
-      .scrolling-wrapper::-webkit-scrollbar-thumb {
-        background: #ffc107; /* warna kuning seperti tombol Trending */
-        border-radius: 10px;
-      
-      }
-      
-    </style>
-  </head>
-  <body>
-
-    <div class="container mt-4 games-section bg-dark">
-      <button class="btn btn-warning mb-3 rounded-pill" >Trending Games</button>
-      <div class="scrolling-wrapper">
-        <!-- Game Card -->
-        <div class="card game-card">
-          <img src="../Asset/wukong.webp" alt="Black Myth">
-          <p>Black Myth: Wukong</p>
+      <!-- Statistik -->
+      <div class="d-flex gap-3 my-3">
+        <div class="text-center">
+          <div class="fs-4 fw-bold">3</div>
+          <small>Today</small>
         </div>
-        <div class="card game-card">
-          <img src="../Asset/dmc.webp" alt="DMC 5">
-          <p>Devil May Cry 5</p>
+        <div class="text-center">
+          <div class="fs-4 fw-bold">12</div>
+          <small>Weekly</small>
         </div>
-        <div class="card game-card">
-          <img src="../Asset/astro bot.webp" alt="Astro Bot">
-          <p>Astro Bot</p>
+        <div class="text-center">
+          <div class="fs-4 fw-bold">2008</div>
+          <small>Total</small>
         </div>
-        <div class="card game-card">
-          <img src="../Asset/Balatro.jpeg" alt="Balatro">
-          <p>Balatro</p>
+        <div class="text-center">
+          <div class="fs-4 fw-bold">6</div>
+          <small>Like</small>
         </div>
-        <div class="card game-card">  
-          <img src="../Asset/clair.jpeg" alt="Expedition 33">
-          <p>Clair Obscur: Expedition 33</p>
+        <div class="text-center">
+          <div class="fs-4 fw-bold">9</div>
+          <small>Rating</small>
         </div>
       </div>
+
+      <!-- Deskripsi -->
+      <p>
+        Astro Bot is a 3D platformer developed by Team Asobi, featuring the
+        fun adventures of a small robot named Astro. Players journey
+        through vibrant worlds filled with obstacles, puzzles, and hidden
+        secrets, supported by smooth and responsive controls.
+      </p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+    <!-- Bagian Kanan (Gambar) -->
+    <div class="col-md-4 d-flex align-items-center p-3">
+      <img src="images/astrobot.jpg" class="img-fluid rounded-3" alt="Astro Bot">
+    </div>
+  </div>
+
+  <!-- Bagian Bawah (Warna berbeda) -->
+  <div class="card-footer text-center p-3" style="background-color:#3434a5;">
+    <button class="btn btn-primary rounded-3 px-4">
+      Download →
+    </button>
+  </div>
+</div>
