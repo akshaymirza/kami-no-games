@@ -9,7 +9,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap" rel="stylesheet">  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>  
 
+  
   <style>
     body {
       background-color: #010322;
@@ -20,6 +23,7 @@
       margin-right: auto;
       margin-left: auto;
       display: flex;
+      border: 0.5px solid #ffffff
     }
     .navbar {
        background-color: #1D1C4C;
@@ -138,6 +142,7 @@
     .featured-game .stat-box small {
       color: #bbb;
     }
+    
   </style>
 </head>
 <body>
@@ -183,7 +188,7 @@
 </nav>
 
 <!-- Carousel -->
-<div id="carouselExample" class="carousel slide">
+<div id="carouselExample" class="carousel slide" style="border: 1px solid #ffffff;">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../Asset/astro bot.webp" class="d-block w-100" alt="Astro bot">
@@ -206,8 +211,8 @@
 </div>
 
 <!-- Games Section -->
-<div class="container mt-4 games-section" style="background-color: #1D1C4C;">
-  <button class="btn btn-warning mb-3 rounded-pill trending">Trending Games</button>
+<div class="container mt-4 games-section" style="background-color: #1D1C4C;stroke: white;border: 1px solid #ffffff;">
+  <button class="btn btn-warning mb-3 rounded-pill trending"  >Trending Games</button>
   <div class="scrolling-wrapper">
     <div class="card game-card carousel-inner">
       <img src="../Asset/wukong.webp" alt="Black Myth">
@@ -233,15 +238,19 @@
       <img src="../Asset/clair.jpeg" alt="Expedition 33">
       <p>Clair Obscur: Expedition 33</p>
     </div>
+        <div class="card game-card">  
+      <img src="../Asset/clair.jpeg" alt="Expedition 33">
+      <p>Clair Obscur: Expedition 33</p>
+    </div>
     </div>
   </div>
 </div>
 
 
 <section class="py-5 text-white">
-  <div class="container mt-3 p-0" style= "background-color:#1D1C4C;" style="border-radius:3000px ;">
+  
 
-    <div class="card bg-transparent border rounded-4 p-3">
+    <div class="card container border rounded-4 p-3" style="background-color:#1D1C4C; border: 1px solid #ffffff;">
       <div class="d-flex justify-content-between align-items-center">
 
         <div class="d-flex align-items-center">
@@ -260,10 +269,10 @@
       </div>
     </div>
 
-  </div>
+
 </section>
 
-<div class="container mt-4 games-section" style="background-color: #1D1C4C; margin-bottom: -70px;">
+<div class="container mt-4 games-section" style="background-color: #1D1C4C; margin-bottom: -70px; border: 1px solid #ffffff;">
   <button class="btn btn-warning mb-3 rounded-pill trending">Trending Games</button>
   <div class="scrolling-wrapper">
     <div class="card game-card ">
@@ -291,11 +300,19 @@
       <p>Clair Obscur: Expedition 33</p>
 
     </div>
+        <div class="card game-card">  
+      <img src="../Asset/clair.jpeg" alt="Expedition 33">
+      <p>Clair Obscur: Expedition 33</p>
+    </div>
   </div>
     <div class="scrolling-wrapper">
     <div class="card game-card ">
       <img src="../Asset/wukong.webp" alt="Black Myth">
       <p>Black Myth: Wukong</p>
+    </div>
+        <div class="card game-card">  
+      <img src="../Asset/clair.jpeg" alt="Expedition 33">
+      <p>Clair Obscur: Expedition 33</p>
     </div>
     <div class="card game-card">
       <img src="../Asset/dmc.webp" alt="DMC 5">
@@ -320,8 +337,8 @@
       </div>
   </div>
 </div>
-<div class="container mt-4 card-footer text-center p-3" style="background-color: #35348D; border-radius: 0 0 20px 20px;">
-<button class="btn btn-warning mb-1 rounded-pill" style="background-color: #1D1C4C; color: #ffffff;" >Load More</button>
+<div class="container mt-4 card-footer text-center p-3" style="background-color: #35348D; border-radius: 0 0 20px 20px;border: 2px solid #ffffff;">
+<a href="coba.html" class="btn btn warning mb-1 rounded-pill" style="background-color: #1D1C4C;color: #ffffff; font-size: 1.8rem;border: 2px solid white;">Load More</a>
   </div>
 
 <div class="container mt-4 game-card">
@@ -334,7 +351,7 @@
 
 <!-- === Featured Game Section (Astro Bot) === -->
 <section class="py-5 text-white">
-  <div class="container featured-game rounded-4 p-4">
+  <div class="container featured-game rounded-4 p-4" style="border: 3px solid #ffffff;">
     <div class="row align-items-center">
       
       <!-- Left Content -->
@@ -342,29 +359,29 @@
         <span class="badge bg-warning mb-3 px-3 py-2 rounded-pill" style="font-family: 'Mrs Sheppards'; font-size: larger; color: #ffffff">
           ⭐ Game of the Day
         </span>
-        <h2 class="fw-bold">Astro Bot</h2>
+        <h2 class="fw-bold" style="padding-left: 1rem; font-size: 4rem;" >Astro Bot</h2>
 
         <!-- Stats -->
         <div class="d-flex gap-3 my-3 flex-wrap">
           <div class="stat-box text-center">
             <h5 class="mb-0">3</h5>
-            <small>Today</small>
+            <small style="color: floralwhite;">Today</small>
           </div>
           <div class="stat-box text-center">
             <h5 class="mb-0">12</h5>
-            <small>Weekly</small>
+            <small style="color: #645DEF;">Weekly</small>
           </div>
           <div class="stat-box text-center">
             <h5 class="mb-0">2008</h5>
-            <small>Total</small>
+            <small style="color: #FFF200">Total</small>
           </div>
           <div class="stat-box text-center">
             <h5 class="mb-0">6</h5>
-            <small>Like</small>
+            <small style="color: #FF0000;">Like</small>
           </div>
           <div class="stat-box text-center">
             <h5 class="mb-0">9</h5>
-            <small>Rating</small>
+            <small style="color: #37FD00;">Rating</small>
           </div>
         </div>
 
@@ -380,7 +397,7 @@
 
       <!-- Right Content (Image) -->
       <div class="col-lg-4 text-center mt-4 mt-lg-0">
-        <img src="../Asset/astro bot.webp" alt="Astro Bot" class="img-fluid rounded-3 shadow" style="width: 80%;height: 26rem;">
+        <img src="../Asset/astro bot.webp" alt="Astro Bot" class="img-fluid rounded-3 shadow" style="width: 80%;height: 26rem;border: 3px solid #ffffff;">
       </div>
     </div>
   </div>
